@@ -52,24 +52,24 @@ crossorigin="anonymous">
 <div class="container">
   <div class="row">
     <div class="col-md-12"></br></br><h3>Stuur een bericht aan mij</h3></div>
-    <form>
+    <form action="https://formspree.io/f/xwkzgqkn" method="POST">
       <div class="form-group">
 
         <div class="row">
           <div class="col">
             <label class="form-label" for="Voornaam">Voornaam</label>
-            <input type="text" class="form-control" placeholder="Voornaam">
+            <input type="text" name="Naam" class="form-control" placeholder="Voornaam">
           <br>
           <label class="form-label" for="Achternaam">Achternaam</label>
-            <input type="text" class="form-control" placeholder="Achternaam">
+            <input type="text" name="Achternaam" class="form-control" placeholder="Achternaam">
           <br>
         <label class="form-label" for="emailadres">Uw email adres</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Voer uw emailadres in">
+        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Voer uw emailadres in">
         <small id="emailHelp" class="form-text text-muted">Ik deel uw emailadres nooit met anderen</small>
       <br><br>
      
         <label class="form-label" for="Uw bericht">Uw bericht</label>
-        <input type="text" class="form-control" id="message" max-length="800" style="height: 150px;" placeholder="Uw bericht">
+        <input type="text" class="form-control" name="message" id="message" max-length="800" style="height: 150px;" placeholder="Uw bericht">
       <br>
       <button type="submit" class="btn btn-primary">Verstuur</button>
       </div></div></div>
